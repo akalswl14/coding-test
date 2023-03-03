@@ -30,11 +30,7 @@ class Solution {
         boolean[] checked = new boolean[tickets.length];
         dfs(new Node(-1, "ICN"), list, checked);
         
-        String[] answer = new String[result.size()];
-        for(int i =0;i<result.size();i++){
-            answer[i] = result.get(i);
-        }
-        return answer;
+        return result.toArray(new String[result.size()]);
     }
     
     private boolean dfs(Node nowNode, List<String> answer, boolean[] checked){
