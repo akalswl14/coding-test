@@ -4,9 +4,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.HashMap;
-import java.util.LinkedList;
 import java.util.Map;
-import java.util.Queue;
 import java.util.StringTokenizer;
 
 public class Main {
@@ -21,7 +19,6 @@ public class Main {
     st = new StringTokenizer(br.readLine());
     int M = Integer.parseInt(st.nextToken());
 
-    Queue<Integer> q = new LinkedList<>();
     Map<Integer, Boolean> m = new HashMap<Integer, Boolean>();
     st = new StringTokenizer(br.readLine());
     for (int i = 0; i < N; i++) {
