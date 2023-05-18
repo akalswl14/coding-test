@@ -19,6 +19,7 @@ class Solution {
     Set<Integer> caseSet = getNumbers(numbers);
 
     int answer = 0;
+    // 이 수가 소수인지 판별할 때는, 수를 반으로 나눈 수까지만 나눠보면서, 나누어 떨어지는 수가 있다면 소수가 아닌 것으로 판별하면 된다.
     for (int target : caseSet) {
       if (target == 1) {
         continue;
