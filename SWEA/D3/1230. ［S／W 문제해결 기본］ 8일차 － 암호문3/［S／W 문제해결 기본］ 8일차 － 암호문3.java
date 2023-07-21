@@ -11,7 +11,7 @@ import java.util.StringTokenizer;
 class Solution {
 
   static final String INSERT = "I", DELETE = "D", ADD = "A";
-  static List<String> list;
+  static List<Integer> list;
   static int N, M, x, y;
 
   public static void main(String[] args) throws IOException {
@@ -29,7 +29,7 @@ class Solution {
 
       st = new StringTokenizer(br.readLine());
       for (int j = 0; j < N; j++) {
-        list.add(st.nextToken());
+        list.add(Integer.parseInt(st.nextToken()));
       }
 
       st = new StringTokenizer(br.readLine());
@@ -57,7 +57,7 @@ class Solution {
       x = Integer.parseInt(st.nextToken());
       y = Integer.parseInt(st.nextToken());
       while (y-- > 0) {
-        list.add(x++, st.nextToken());
+        list.add(x++, Integer.parseInt(st.nextToken()));
       }
     } else if (command.equals(DELETE)) {
       x = Integer.parseInt(st.nextToken());
@@ -68,7 +68,7 @@ class Solution {
     } else if (command.equals(ADD)) {
       y = Integer.parseInt(st.nextToken());
       while (y-- > 0) {
-        list.add(st.nextToken());
+        list.add(Integer.parseInt(st.nextToken()));
       }
     }
   }
